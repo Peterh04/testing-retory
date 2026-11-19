@@ -946,8 +946,8 @@
         <nav id="nav" aria-label="Main">
           <a href="about" data-n="about">About</a
           ><a href="projects" data-n="projects">Projects</a
-          ><a href="#news" data-n="news">News</a
-          ><a href="#gallery" data-n="gallery">Gallery</a>
+          ><a href="news" data-n="news">News</a
+          ><a href="gallery" data-n="gallery">Gallery</a>
         </nav>
         <a href="#oin" class="btn hd" style="padding: 12px 24px"
           >Get involved <span class="ar">→</span></a
@@ -997,7 +997,7 @@
               >
                 <a href="projects" class="btn"
                   >Explore our work <span class="ar">→</span></a
-                ><a href="#about" class="link">Meet the club</a>
+                ><a href="about" class="link">Meet the club</a>
               </div>
             </div>
           </div>
@@ -1030,7 +1030,7 @@
               community leaders who give their time, skills and resources to the
               people of Masaka and beyond.
             </p>
-            <a href="#about" class="link"
+            <a href="about" class="link"
               >About our club <span class="ar">→</span></a
             >
           </div>
@@ -1106,7 +1106,7 @@
             </div>
             <div class="grid3" id="pHome"></div>
             <div class="more-l rv">
-              <a href="#projects" class="link"
+              <a href="projects" class="link"
                 >See all projects <span class="ar">→</span></a
               >
             </div>
@@ -1122,7 +1122,7 @@
           </div>
           <div class="ppl" id="pplHome"></div>
           <div class="more-l rv">
-            <a href="#team" class="link"
+            <a href="team" class="link"
               >See the full team <span class="ar">→</span></a
             >
           </div>
@@ -1139,7 +1139,7 @@
           </div>
           <div class="news" id="nHome"></div>
           <div class="more-l rv">
-            <a href="#news" class="link">All news <span class="ar">→</span></a>
+            <a href="news" class="link">All news <span class="ar">→</span></a>
           </div>
         </section>
 
@@ -1272,9 +1272,9 @@
                   margin-top: 40px;
                 "
               >
-                <a href="#projects" class="link"
+                <a href="projects" class="link"
                   >See our projects <span class="ar">→</span></a
-                ><a href="#team" class="link"
+                ><a href="team" class="link"
                   >Meet the team <span class="ar">→</span></a
                 >
               </div>
@@ -1372,9 +1372,9 @@
         </div>
         <div>
           <h4>Explore</h4>
-          <a href="#about">About</a><a href="#projects">Projects</a
-          ><a href="#news">News</a><a href="#gallery">Gallery</a
-          ><a href="#team">Our team</a>
+          <a href="about">About</a><a href="projects">Projects</a
+          ><a href="news">News</a><a href="gallery">Gallery</a
+          ><a href="team">Our team</a>
         </div>
         <div>
           <h4>Where we meet</h4>
@@ -1592,7 +1592,7 @@
         }
         function pc(p, i) {
           return (
-            '<a href="#projects" class="card rv" style="--d:' +
+            '<a href="projects" class="card rv" style="--d:' +
             (i % 3) * 0.1 +
             's"><div class="pic">' +
             im(p[3], p[0]) +
@@ -1607,7 +1607,7 @@
         }
         function nc(n, i) {
           return (
-            '<a href="#news" class="card rv" style="--d:' +
+            '<a href="news" class="card rv" style="--d:' +
             (i % 3) * 0.1 +
             's"><div class="pic">' +
             im(n[4], n[0]) +
@@ -1622,7 +1622,7 @@
         }
         function sc(n, i) {
           return (
-            '<a href="#news" class="si card rv" style="--d:' +
+            '<a href="#ews" class="si card rv" style="--d:' +
             (0.1 + i * 0.1) +
             's"><div class="pic">' +
             im(n[4], n[0]) +
@@ -1640,7 +1640,7 @@
           .join("");
         var f = N[1];
         document.getElementById("nHome").innerHTML =
-          '<a href="#news" class="feat card rv"><div class="pic">' +
+          '<a href="news" class="feat card rv"><div class="pic">' +
           im(f[4], f[0]) +
           '</div><p class="tag">' +
           f[2] +
