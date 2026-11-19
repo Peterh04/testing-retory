@@ -193,8 +193,16 @@
         padding-bottom: 14px;
       }
       .logo {
-        font-size: 23px;
-        font-weight: 600;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .logo img {
+        height: 46px;
+        width: 126px;
+        max-width: 126px;
+        object-fit: contain;
+        display: block;
       }
       nav {
         display: flex;
@@ -249,17 +257,7 @@
       .burger[aria-expanded="true"] span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
       }
-      #prog {
-        position: fixed;
-        top: env(safe-area-inset-top, 0px);
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background: var(--accent);
-        transform: scaleX(0);
-        transform-origin: left;
-        z-index: 70;
-      }
+
       .hero {
         position: relative;
         overflow: hidden;
@@ -939,10 +937,14 @@
     </style>
   </head>
   <body>
-    <div id="prog"></div>
     <header id="hd">
       <div class="wrap bar">
-        <a href="#top" class="logo serif">Rotary Club of Masaka</a>
+        <a href="#top" class="logo">
+          <img
+            src="assets/rotary-club-of-masaka-high-quality.svg"
+            alt="Rotary Club of Masaka"
+          />
+        </a>
         <nav id="nav" aria-label="Main">
           <a href="about" data-n="about">About</a
           ><a href="projects" data-n="projects">Projects</a
@@ -1789,7 +1791,6 @@
           if (e.key === "ArrowRight") openLb(cur + 1);
         });
         var hd = document.getElementById("hd"),
-          pr = document.getElementById("prog"),
           nav = document.getElementById("nav"),
           bg = document.getElementById("bg"),
           V = ["about", "projects", "news", "gallery", "team"];
